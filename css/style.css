@@ -1,0 +1,455 @@
+*{box-sizing: border-box;}
+html{margin:0px;padding:0px;}
+h1,h2,h3,h4,h5,h6,.lead{font-family: 'Droid Sans', sans-serif;}
+/* fonface*/
+@font-face
+{
+    font-family:Bold-smooth;
+    /*src:url("../fonts/DroidSans-Bold.ttf");*/
+    src:url("../fonts/Kurale-Regular.ttf");
+}
+
+body{padding-top:0px;font-family: 'Bold-smooth', serif;overflow:hidden;}
+/**** start overwriting over bootsrtrap  ****/
+/* man navbar */
+.navbar{min-height: 70px;}
+/*nav bar toggle*/
+.navbar-toggle{margin-top: 18px;}
+/* navbar link */
+.navbar-inverse .navbar-nav > li > a
+{
+    color: #BBB;
+    padding-top:25px;
+    padding-bottom:25px;
+    font-size: 16px;
+}
+/* brand name */
+.navbar-inverse .navbar-brand{color:#BBB;font-size: 30px;line-height: 40px;}
+/* drop down menu */
+.navbar-nav > li > .dropdown-menu{background-color: #333;min-width: 200px;}
+/* drop down menu link color */
+.navbar-nav > li > .dropdown-menu > li > a{color:#fff;padding:8px 20px;}
+/* drop down menu hover and focus color*/
+.navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-nav > li > .dropdown-menu > li > a:focus
+{
+    color:#fff;
+    padding-left: 25px;
+    -webkit-transition: padding .5s ease;
+    -moz-transition: padding .5s ease;
+    -ms-transition: padding .5s ease;
+    -o-transition: padding .5s ease;
+    transition: padding .5s ease;
+    
+    
+}
+/* drop down divider background color*/
+.navbar-nav .dropdown-menu .divider{background-color:#fff;}
+/* drop down menu start position */
+.navbar-right .dropdown-menu{left:0;right: auto;}
+.navbar-inverse .navbar-nav .login span {color:#ff0000;}
+
+/* start styling the main into screen */
+.ContainerSection
+{
+    background-color: rgba(2,2,2,0.7);
+}
+.Main-Intro{
+    margin-top: 0px;
+    background: url("../background/17818065_1898193553792001_7089599079809810432_n.jpg") no-repeat 60% 60% fixed;
+    width: 100%;
+    height: 100%;
+    /* should put the prefixes*/
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 0px;
+}
+.Main-Intro .Main-Intro-Content
+{
+    background-color:rgba(2,2,2,0.3);
+    height: 100%;
+    overflow-y: hidden;
+    
+}
+
+.Main-Intro .Main-Intro-Content .Intro-TxT h2
+{
+     font-family:  'Droid Sans';
+     margin-top: 100px;
+     color:#fff;
+     margin-left: 45%;  
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT h2 img
+{
+    height: 80px;
+    width: 80px;
+    background-color:#fff;
+    border-radius:50%; 
+    border:2px solid #3897f0;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT p
+{
+    color:#fff;
+    font-size: 20px;
+    text-indent: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login
+{
+    margin-left: 10% ;
+    width:280px;
+    margin-right: 10%;
+    
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login
+{
+    background-color: rgba(2,2,2,0.5);
+    width: 300px;
+    padding: 10px 10px 30px 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Email
+{
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Email span i
+{
+    color:#009AFF;
+    font-weight: bolder;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Password{margin-bottom: 10px;}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Password span i
+{
+    color:#009AFF;
+    font-weight: bolder;
+}
+
+.Main-Intro .Main-Intro-Content .Intro-TxT .login label
+{
+    color:#fff;
+    font-size: 16px;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .pe
+{
+    margin-left: 10px;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .f
+{}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .radio_p
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .radio_f
+{
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+/* error testing */
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Error_login
+{
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius:5px;
+    padding-left: 10px; 
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Error_login .mainerror
+{ 
+    padding-left: 30%;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Error_login span
+{
+    color:#ff0000;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .Submit-Btn
+{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border:1px solid #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login span{color:#fff;}
+.Main-Intro .Main-Intro-Content .Intro-TxT .login .forget
+{
+    font-weight: bold;
+    font-size: 15px;
+    color:#fff;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*the footer section */
+.FooterSection{height: 60px;}
+.FooterSection .copy_right
+{
+    background-color: #333;
+    color:#AAA;
+    padding:15px 0;
+    font-size: 18px;
+    height: 60px;
+}
+.FooterSection .copy_right:hover
+{
+    color:#fff;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -ms-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+}
+
+/*profile design*/
+/* fonface*/
+@font-face
+{
+    font-family:Bold-smooth;
+    /*src:url("../fonts/DroidSans-Bold.ttf");*/
+    src:url("../fonts/Kurale-Regular.ttf");
+}
+html
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color:#fafafa; 
+    font-family: 'Bold-smooth', serif;
+}
+/* profile*/
+.profile_header
+{
+    border-top:1px solid #999999;
+    border-bottom:1px solid #999999; 
+}
+.profile_header .logo 
+{
+    padding:4px;
+}
+.profile_header .logo img
+{
+    border-radius:50px;
+    width: 129px;
+    height: 100px;
+}
+/* search box */
+.profile_header .search
+{
+    margin-top:25px; 
+}
+.profile_header .search input[type=text] 
+{
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search/search.png');
+   /*prefixes*/
+    background-size: 20px 20px;
+   /*prefixes*/
+    background-position: 10px 10px;
+   
+    background-repeat: no-repeat;
+    padding: 5px 10px 8px 40px;
+   
+    /*prefixes*/
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+/* When the input field gets focus, change its width to 100% */
+.profile_header .search input[type=text]:focus {
+    width: 100%;
+}
+
+/* header option */
+.profile_header .options
+{
+    margin: 30px auto;
+}
+.profile_header .options .option
+{
+    margin-left: 5px;
+}
+.profile_header .options .option li
+{
+    display: inline;
+    margin-left: 20px;
+}
+.profile_header .options .option li a
+{
+    text-decoration: none;
+    color:#333;
+}
+
+/*profile*/
+.profile
+{
+    margin-top:25px;
+    padding:40px 20px 0;
+ }
+/* profile photo*/
+.profile .profile_photo
+{
+    margin: 0 auto;
+    width: 50%;      
+}
+.profile .profile_photo img
+{
+    border-radius: 50%;
+    border: 2px solid #999999; 
+    width:180px;
+    height:180px;
+}
+
+/* profile text*/
+.profile .profile_text
+{
+    color:#333;
+}
+.profile .profile_text h4
+{
+    display: inline;
+}
+.profile .profile_text .setting_btn
+{ 
+    border: 1px solid #999999;
+    text-decoration: none;
+    padding:5px;
+    color:#333;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    margin: 5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.profile .profile_text .extra_setting
+{
+    text-decoration: none;
+    padding:5px;
+    color:#333;
+    font-weight: bolder;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.profile .profile_text .extra_setting span
+{
+        padding: 1px 0px;
+        margin: 1px;
+        font-size: 18px;
+        color:#999;
+}
+
+.profile .profile_text p
+{
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+}
+.profile .profile_text .counters
+{
+    text-align: center;
+    font-size: 16px;
+}
+.profile .profile_text .counters .bold
+{
+    font-weight: bolder;
+}
+
+.posts_setion
+{
+    height: 190px;
+}
+
+
+/*footer style*/
+.footer_inc
+{
+    background-color: #fafafa;
+    color:#333;
+    padding:15px 0;
+    margin-top: 40px;
+    font-size: 18px;
+    border-top:1px solid #999;
+    border-bottom:1px solid #999; 
+
+}
+
+
+/* start section loading */
+.loading-overlay
+{
+    background-color: #222;
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index: 99999;    
+}
+.sk-cube-grid {width: 80px;height: 80px;margin: 250px auto;}
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #FFF;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {-webkit-animation-delay: 0.2s;animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {-webkit-animation-delay: 0.3s;animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {-webkit-animation-delay: 0.4s;animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {-webkit-animation-delay: 0.1s;animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {-webkit-animation-delay: 0.2s;animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {-webkit-animation-delay: 0.3s;animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {-webkit-animation-delay: 0s;animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {-webkit-animation-delay: 0.1s;animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {-webkit-animation-delay: 0.2s;animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {-webkit-transform: scale3D(1, 1, 1);transform: scale3D(1, 1, 1);}
+    35% {-webkit-transform: scale3D(0, 0, 1);transform: scale3D(0, 0, 1); }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {-webkit-transform: scale3D(1, 1, 1);transform: scale3D(1, 1, 1);}
+  35% {-webkit-transform: scale3D(0, 0, 1);transform: scale3D(0, 0, 1);} 
+}
+/* end section loading */

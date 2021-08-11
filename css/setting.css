@@ -1,0 +1,697 @@
+.error{
+    color: #ff0000;
+}
+.setting
+{
+    padding: 0px;
+    margin-top: 40px;
+    border:1px solid #999; 
+    border-radius: 5px;
+}    
+.setting .side
+{  
+    padding: 0px;
+}
+.setting .sidebar_menu
+{
+        
+}
+.setting .sidebar_menu .option
+{
+
+}
+.setting .sidebar_menu .option li
+{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.setting .sidebar_menu .option li a
+{
+    text-decoration: none;
+    color:#333;
+    font-size: 16px;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.setting .sidebar_menu .option li a:hover
+{
+    border-left:3px solid #999;
+    margin-left: -2px; 
+}
+.setting .sidebar_menu .option .active a
+{
+    border-left:3px solid #333;
+    margin-left: -2px; 
+}
+.setting .sidebar_content
+{
+  border-left:1px solid #999;  
+  padding:15px; 
+  min-height: 309px;
+}
+.setting .sidebar_content .sidebar_content_header 
+{
+    width: 50%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .sidebar_content_header h4
+{
+    color:#3897f0;
+}
+.setting .sidebar_content .sidebar_content_header img
+{
+    width: 60px;
+    height: 60px;
+    border-radius:50%; 
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #3897f0;
+}
+
+
+/*person style*/
+/* person data syle*/
+.setting .sidebar_content .person_setting .person-data
+{
+    color:#000;
+    padding:10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 70%
+}
+.setting .sidebar_content .person_setting  .person-data h4{
+    font-size: 21px;
+    color:#000;
+}
+.setting .sidebar_content .person_setting  .person-data .first
+{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+.setting .sidebar_content .person_setting  .person-data .last
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+}
+.setting .sidebar_content .person_setting .person-data .Email
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .person_setting  .person-data .Password
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .person_setting  .person-data .Re-Password
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .person_setting  .person-data .kind select 
+{
+    margin-left: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    color:#a1a3a1;
+}
+
+.setting .sidebar_content .person_setting  .person-data .Description
+{
+    width: 80%;
+}
+.setting .sidebar_content .person_setting  .person-data .Description textarea
+{
+     border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.setting .sidebar_content .person_setting  .person-data .Number1
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.setting .sidebar_content .person_setting  .person-data .Submit-btn
+{
+    margin-left: 35%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding:10px;
+    background-color: #fff;
+    color:#a1a3a1;
+    margin-bottom: 10px;
+    font-size:16px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.setting .sidebar_content .person_setting  .person-data #map
+{
+    background: #333;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.setting .sidebar_content .person_setting  .person-data .error 
+{
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .person_setting  .person-data .error span
+{
+    color:#ff0000;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.setting .sidebar_content .person_setting  .person-data .error_photo
+{
+    display: block;
+    color:#ff0000;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.file-test-area {
+    border: 1px solid;
+    margin: .5em;
+    padding: 1em;
+}
+.file-input {
+    cursor: pointer !important;
+}
+.file-input * {
+    cursor: pointer !important;
+    display: inline-block;
+}
+.file-input.wrapper {
+    display: inline-block;
+    font-size: 14px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.file-input.control {
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    z-index: 2;
+}
+.file-input.content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.file-input.button {
+    border: none;
+    font-weight: bold;
+    margin-left: .25em;
+    padding: 0 .25em;
+    background-color:#fff 
+}
+
+/*person settings style */
+
+/* change password styling sheet */
+.setting .sidebar_content .person_setting .change_password 
+{
+    width: 80%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .person_setting .change_password .new_password
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .person_setting .change_password .re_new_password
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .person_setting .change_password .update_btn
+{
+    border:none;
+    width: 50%;
+    margin:25px auto;
+    padding:10px;
+    border-radius:5px;
+}
+
+/* update photo styling css */
+.setting .sidebar_content .person_setting .upload_image_box
+{
+    padding:10px;
+    border: 2px dashed #3897f0;
+    width:80%;
+    margin: 0px auto;
+    color:#3897f0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.setting .sidebar_content .person_setting .upload_image_box h4{
+    margin-left: 31%;
+}
+.setting .sidebar_content .person_setting .upload_photo_container
+{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.setting .sidebar_content .person_setting .photo_btn
+{
+    width:100%;
+}
+.setting .sidebar_content .person_setting .photo_btn .content
+{
+    width: 100%;
+    margin-left: 10%;   
+}
+.setting .sidebar_content .person_setting .upload_photo_container .photo_in_btn
+{
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;
+    width: 40%;
+    margin: 0px auto;
+}
+/* update_address styling page */
+.setting .sidebar_content .person_setting .update_address
+{
+    width: 80%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .person_setting .update_address .address
+{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.setting .sidebar_content .person_setting .update_address .update_address_btn
+{
+    border:none;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;
+    width: 50%;   
+}
+/* update telephone page styling css */
+.setting .sidebar_content .person_setting .update_telephone
+{
+    width: 80%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .person_setting .update_telephone .telephnoe
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.setting .sidebar_content .person_setting .update_telephone .telephone_btn
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;  
+}
+/* report styling page */
+.setting .sidebar_content .person_setting .contact_us
+{
+    width:80%;
+    margin: 0px auto ;
+}
+.setting .sidebar_content .person_setting .send_message
+{
+    padding:10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.setting .sidebar_content .person_setting .message
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;     
+}
+
+.setting .sidebar_content  .person_setting .hint
+{
+    font-weight: bolder;
+    color:#333;
+}
+.setting .sidebar_content  .person_setting .hint a span
+{
+    color:#3897f0;
+    cursor: pointer;
+}
+
+/*pop up report messsage style*/
+.fading_opacity .mod_dio .mod_con .documentation_body
+{
+    width: 90%;
+    height: 200px; 
+    margin: 10px auto;
+    background-color: #ddd;
+    padding:10px;
+
+}
+.fading_opacity .mod_dio .mod_con .documentation_body h4
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dio .mod_con .documentation_body p
+{
+    text-indent: 15px;
+}
+.fading_opacity .mod_dio .mod_con .documentation_body .header6
+{
+    color:#3897f0;
+    font-weight:bolder;
+}
+
+#Tag_list
+{
+
+}
+#Tag_list .tag 
+{
+    border: 1px solid #ccc;
+    width: 250px;
+    margin: 0 auto;
+}
+#Tag_list .tag li
+{
+    border-bottom:1px solid #ccc; 
+    padding: 5px;
+    cursor:pointer;
+}
+#Tag_list .tag li img
+{
+    width:50px;
+    height: 50px;
+    border: 1px solid #3897f0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* foundation changing password style */
+
+.setting .sidebar_content .foundation_setting .change_password_f 
+{
+    width: 80%;
+    margin: 30px auto;
+}
+.setting .sidebar_content .foundation_setting .f_old
+{
+    margin-bottom: 10px;
+}
+
+.setting .sidebar_content .foundation_setting .change_password_f .new_password_f
+{
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.setting .sidebar_content .foundation_setting .change_password_f .re_new_password_f
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.setting .sidebar_content .foundation_setting .change_password_f .update_btn_f
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top: 20px;
+}
+/* styling foundation photo*/
+
+
+.setting .sidebar_content .foundation_setting .photo_btn_p
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;   
+}
+
+
+
+.setting .sidebar_content .foundation_setting .upload_image_box_p
+{
+    padding:10px;
+    border: 2px dashed #3897f0;
+    width:80%;
+    margin: 0px auto;
+    color:#3897f0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.setting .sidebar_content .foundation_setting .upload_image_box_p h4{
+    margin-left: 31%;
+}
+.setting .sidebar_content .foundation_setting .upload_photo_container_foundation
+{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.setting .sidebar_content .foundation_setting .photo_btn
+{
+    width:100%;
+}
+.setting .sidebar_content .foundation_setting .photo_btn .content
+{
+    width: 100%;
+    margin-left: 10%;   
+}
+
+
+
+/* styling foundation address*/
+.setting .sidebar_content .foundation_setting .update_address_p
+{
+    width: 80%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .foundation_setting .update_address_p .address_p
+{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .foundation_setting .update_address_p .update_address_btn_p
+{
+    border:none;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;
+    width: 50%;   
+}
+/* update foundation telephone page styling css */
+.setting .sidebar_content .foundation_setting .update_telephone_p
+{
+    width: 80%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .foundation_setting .update_telephone_p .telephnoe_p
+{
+    margin-top: 30px;
+    margin-bottom: 10px; 
+}
+.setting .sidebar_content .foundation_setting .update_telephone_p .telephone_btn_p
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;  
+}
+/*foundation fax styling page*/
+.setting .sidebar_content .foundation_setting .fax_container
+{
+    width: 80%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .foundation_setting .fax_container .fax
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .foundation_setting .fax_container .fax_btn
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;  
+}
+/*foundation site link styling page*/
+.setting .sidebar_content .foundation_setting .link_container
+{
+    width: 80%;
+    margin: 0px auto;
+}
+.setting .sidebar_content .foundation_setting .link_container .link
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .foundation_setting .link_container .link_btn
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;  
+}
+/* foundation contact us */
+.setting .sidebar_content .foundation_setting .contact_us_f
+{
+    width:80%;
+    margin: 0px auto ;
+}
+.setting .sidebar_content .foundation_setting .send_message_f
+{
+    padding:10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.setting .sidebar_content .foundation_setting .message_f
+{
+    border:none;
+    width: 50%;
+    margin:0px auto;
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;     
+}
+
+.setting .sidebar_content .foundation_setting
+{
+    min-height: 309px;
+}
+
+.setting .sidebar_content .foundation_setting form
+{
+    width: 80%;
+    margin: 0px auto;
+}
+/* foundation setting styling */
+.setting .sidebar_content .foundation_setting .Name
+{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.setting .sidebar_content .foundation_setting .Email
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.setting .sidebar_content .foundation_setting .city
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.setting .sidebar_content .foundation_setting .kind select 
+{
+    margin-left: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    color:#a1a3a1;
+    margin-top: 10px;
+}
+
+.setting .sidebar_content .foundation_setting .Description
+{
+    width: 100%;
+}
+.setting .sidebar_content .foundation_setting .Description textarea
+{
+    border-radius: 10px;
+    font-size: 16px;
+    width:80%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.setting .sidebar_content .foundation_setting .Number1
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+.setting .sidebar_content .foundation_setting #map
+{
+    background: #333;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.setting .sidebar_content .foundation_setting .Submit-btn
+{
+    margin-left: 35%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding:10px;
+    background-color: #fff;
+    color:#a1a3a1;
+    margin-bottom: 10px;
+    font-size:16px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+

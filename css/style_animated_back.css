@@ -1,0 +1,18 @@
+body {
+  background-color: #eee;
+  overflow: hidden;
+}
+canvas {
+  background-color: #eee;
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  color: #777;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 3em 0 1em 0;
+  font-weight: normal;
+}

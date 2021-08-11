@@ -1,0 +1,645 @@
+
+.clear {
+clear: both;
+}
+
+.post_area .post
+{
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top:60px; 
+}
+.post_area .post .post_header
+{
+	background-color: #fff;
+	border:1px solid #efefef;
+	padding: 10px;
+	height: 64px;
+}
+.post_area .post .post_header img
+{
+	width:40px;
+	display: inline;
+	height: 40px;
+	margin-right: 20px;
+	float: left;
+	border-radius:50%; 
+}
+.post_area .post .post_header h5
+{
+	display: inline;
+	float: left;
+}
+.post_area .post .post_header span
+{
+	display: inline;
+	float: right;
+	padding: 10px;
+}
+.clear {
+clear: both;;
+}
+.post_area .post .post_image
+{
+	max-width: 600px;
+}
+.post_area .post .post_image  img
+{
+	width:600px;
+	min-height: 250px;
+	
+}
+.post_area .post .post_image .main-photo img 
+{
+	height: 400px;
+}
+.post_area .post .post_image .rest_photos
+{
+	margin-top: 3px;
+}
+.post_area .post .post_image .rest_photos .R_photo 
+{
+	height: 250px;
+} 
+.post_area .post .post_image .rest_photos .R_photo a
+{
+	text-decoration: none;
+	cursor: pointer;
+}
+.post_area .post .post_image .rest_photos .R_photo .number_rest_images
+{
+	position: relative;
+	top:-180px;
+	left:250px;
+	border: 5px dashed #3897f0;
+	border-radius:50%;
+	padding: 10px; 
+	z-index: 2;
+	color: #333;
+	font-size: 35px;
+}
+.post_area .post .post_image  .rest_photos .R_photo
+{
+	z-index: -1;
+}
+.post_area .post .post_image  .rest_photos .R_photo img 
+{
+	opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    z-index: 1;
+    height: 300px;
+} 
+
+
+.post_area .post .related_contents
+{
+	background-color: #fff;
+	border: 1px solid #efefef;
+	margin-top: 50px;
+}
+.post_area .post .related_contents .likes
+{
+	padding: 10px;
+	padding-left: 30px;
+}
+.post_area .post .related_contents .caption
+{
+	margin-top: 10px;
+	padding: 10px;
+}
+.post_area .post .related_contents .caption p
+{
+	word-wrap:break-word;
+}
+.post_area .post .related_contents .comments
+{
+	padding: 10px;
+	padding-left: 30px;
+}
+.post_area .post .related_contents .comments p img
+{
+	width: 40px;
+	height: 40px;
+	border-radius:50%;
+	border: 1px solid #3897f0; 
+}
+.post_area .post .related_contents .comments p b
+{
+	color: #3897f0;
+}
+.post_area .post .related_contents .comments p strong
+{
+	color: #3897f0;
+	font-weight: bolder;
+	font-size: 12px;
+}
+.post_area .post .related_contents .comments p b a
+{
+	text-decoration: none;
+	color: #3897f0;
+}
+
+.post_area .post .related_contents .actions
+{
+	border-top:1px solid #efefef;
+	padding: 30px;
+}
+.post_area .post .related_contents .actions .like_action_area
+{
+	display: inline;
+}
+.post_area .post .related_contents .actions .like_btn
+{
+	padding: 10px;
+	padding-top: 30px;
+	display: inline;
+	cursor: pointer;
+}
+.post_area .post .related_contents .actions .like_btn_f
+{
+	padding: 10px;
+	padding-top: 30px;
+	display: inline;
+	cursor: pointer;
+}
+.post_area .post .related_contents .actions .comment
+{
+	padding: 10px;
+	padding-top: 30px;
+	display: inline;
+}
+.post_area .post .related_contents .actions .comment input
+{
+	border:none;
+	width: 80%;
+	padding: 10px;
+	font-size: 18px;
+}
+.post_area .post .related_contents .actions .comment .comment_btn
+{
+	border:none;
+	background: none;
+
+}
+.post_area .normal_post_container 
+{
+	 
+}
+.post_area .normal_post_container .normal_post_content
+{
+	max-width:600px;
+	margin: 0 auto;	
+}
+/* suggestion styling */
+.suggestions_intro
+{
+    border: 1px solid #efefef;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:#fff; 
+    cursor: pointer;
+}
+.suggestions_intro h4
+{
+    color:#3897f0;
+}
+.suggestions
+{
+	background-color: #fff;
+	max-width: 600px;
+	margin: 25px auto;
+	border:1px solid #efefef;
+	padding: 0px;
+
+}
+.suggestions .people_suggestions
+{
+	height: 200px;
+	overflow-y:scroll;
+	overflow-x:hidden; 	
+}
+
+.suggestions .people_suggestions::-webkit-scrollbar
+{
+	width: 10px;
+}
+.suggestions .people_suggestions::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.1);
+}
+
+.suggestions .people_suggestions .suggestion_header
+{
+	padding-left: 16px;
+	padding-top:  10px;
+	color: #999;
+	padding-bottom: 10px;
+}
+.suggestions .people_suggestions .suggestion_header h5
+{
+	float: left;
+}
+.suggestions .people_suggestions .suggestion_header span
+{
+	float: right;
+	padding-right: 10px;
+	color:#3897f0;
+	cursor: pointer;
+}
+.suggestions .people_suggestions .suggestion_header span a
+{
+	text-decoration: none;
+	color:#3897f0;
+}
+.suggestions .people_suggestions .suggestion_element
+{
+	border-top:1px solid #efefef;
+	padding: 16px;
+}
+.suggestions .people_suggestions .suggestion_element img 
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline;
+	margin-left: 16px;
+}
+.suggestions .people_suggestions .suggestion_element h5
+{
+	display: inline;
+	margin-left: 16px;
+}
+.suggestions .people_suggestions .suggestion_element button
+{
+	float: right;
+	margin-right: 16px;
+	color:#3897f0;
+	background-color: #fff;
+	border: 1px solid #3897f0;
+	border-radius:5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bolder;
+	margin-top: 10px;
+
+} 
+.suggestions .people_suggestions .suggestion_element .see_profile
+{
+	float: right;
+	margin-right: 16px;
+	color:#3897f0;
+	background-color: #fff;
+	border: 1px solid #3897f0;
+	border-radius:5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bolder;
+	margin-top: 10px;
+	text-decoration: none;
+}
+/* suggestion for foundation*/
+.suggestionsf
+{
+	background-color: #fff;
+	max-width: 600px;
+	margin: 25px auto;
+	border:1px solid #efefef;
+	padding: 0px;
+
+}
+.suggestionsf .people_suggestionsf
+{
+	height: 200px;
+	overflow-y:scroll;
+	overflow-x:hidden; 	
+}
+
+.suggestionsf .people_suggestionsf::-webkit-scrollbar
+{
+	width: 10px;
+}
+.suggestionsf .people_suggestionsf::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.1);
+}
+
+.suggestionsf .people_suggestionsf .suggestion_headerf
+{
+	padding-left: 16px;
+	padding-top:  10px;
+	color: #999;
+	padding-bottom: 10px;
+}
+.suggestionsf .people_suggestionsf .suggestion_headerf h5
+{
+	float: left;
+}
+.suggestionsf .people_suggestionsf .suggestion_headerf span
+{
+	float: right;
+	padding-right: 10px;
+	color:#3897f0;
+	cursor: pointer;
+}
+.suggestionsf .people_suggestionsf .suggestion_headerf span a
+{
+	text-decoration: none;
+	color:#3897f0;
+}
+.suggestionsf .people_suggestionsf .suggestion_elementf
+{
+	border-top:1px solid #efefef;
+	padding: 16px;
+}
+.suggestionsf .people_suggestionsf .suggestion_elementf img 
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline;
+	margin-left: 16px;
+}
+.suggestionsf .people_suggestionsf .suggestion_elementf h5
+{
+	display: inline;
+	margin-left: 16px;
+}
+.suggestionsf .people_suggestionsf .suggestion_elementf button
+{
+	float: right;
+	margin-right: 16px;
+	color:#3897f0;
+	background-color: #fff;
+	border: 1px solid #3897f0;
+	border-radius:5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bolder;
+	margin-top: 10px;
+
+}
+.suggestionsf .people_suggestionsf .suggestion_elementf  .see_profile
+{
+	float: right;
+	margin-right: 16px;
+	color:#3897f0;
+	background-color: #fff;
+	border: 1px solid #3897f0;
+	border-radius:5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bolder;
+	margin-top: 10px;
+	text-decoration: none;
+} 
+/* styling see all sugestion for person or foundation */
+.suggestions_seeAll
+{
+	background-color: #fff;
+	max-width: 600px;
+	margin: 25px auto;
+	border:1px solid #efefef;
+	padding: 0px;
+
+}
+.suggestions_seeAll .people_suggestions_seeAll
+{
+
+}
+
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_header_seeAll
+{
+	padding-left: 16px;
+	padding-top:  10px;
+	color: #999;
+	padding-bottom: 10px;
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_header_seeAll h5
+{
+	float: left;
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_header_seeAll span
+{
+	float: right;
+	padding-right: 10px;
+	color:#3897f0;
+	cursor: pointer;
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_header_seeAll span a
+{
+	text-decoration: none;
+	color:#3897f0;
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_element_seeAll
+{
+	border-top:1px solid #efefef;
+	padding: 16px;
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_element_seeAll img 
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline;
+	margin-left: 16px;
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_element_seeAll h5
+{
+	display: inline;
+	margin-left: 16px;
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_element_seeAll button
+{
+	float: right;
+	margin-right: 16px;
+	color:#3897f0;
+	background-color: #fff;
+	border: 1px solid #3897f0;
+	border-radius:5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bolder;
+	margin-top: 10px;
+
+}
+.suggestions_seeAll .people_suggestions_seeAll .suggestion_element_seeAll .see_profile
+{
+	float: right;
+	margin-right: 16px;
+	color:#3897f0;
+	background-color: #fff;
+	border: 1px solid #3897f0;
+	border-radius:5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bolder;
+	margin-top: 10px;
+	text-decoration: none;
+} 
+/*loading for posts*/
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  overflow: hidden;
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(0,128,255, 0.2);
+  border-right: 1.1em solid rgba(0,128,255, 0.2);
+  border-bottom: 1.1em solid rgba(0,128,255, 0.2);
+  border-left: 1.1em solid #0080ff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*start styling the modal for normal post */
+#alert_error
+{
+	position: relative;
+	top:0;
+}
+.mod .mod_dio
+{
+	margin-top: 130px
+}
+.mod .mod_dio .con_dio .head_dio  .close
+{
+    color:#3897f0;
+}
+.mod .mod_dio .con_dio .head_dio  .close:hover
+{
+    color:#1d31bf;
+}
+.mod .mod_dio .con_dio .head_dio
+{
+    height: 44px;
+}
+.mod .mod_dio .con_dio .head_dio h4
+{
+    color:#7a7171;
+}
+.mod .mod_dio .con_dio .mod_body
+{
+    background-color:#ebebeb; 
+    height: 150px;
+}
+.mod .mod_dio .con_dio .mod_body textarea
+{
+    background-color: #fff;
+    width: 572px;
+    margin:15px auto; 
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    height: 110px;
+    resize: none;
+}
+.mod .mod_dio .con_dio .mod_footer
+{
+    background-color: #ebebeb;
+    height: 60px;
+}
+.mod .mod_dio .con_dio .mod_footer .Image
+{
+    color:#3897f0;
+    float: left;
+    margin-left: 20px;
+    
+}
+.mod .mod_dio .con_dio .mod_footer .post
+{
+    background-color:#3897f0;
+    color:#fff;
+}
+
+
+
+.mod .mod_dio .con_dio .mod_footer .file-test-area {
+    border: 1px solid;
+    margin: .5em;
+    padding: 1em;
+}
+.mod .mod_dio .con_dio .mod_footer .file-input {
+    cursor: pointer !important;
+}
+.mod .mod_dio .con_dio .mod_footer .file-input * {
+    cursor: pointer !important;
+    display: inline-block;
+}
+.mod .mod_dio .con_dio .mod_footer .file-input.wrapper {
+    
+    font-size: 14px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    float: left;
+}
+.mod .mod_dio .con_dio .mod_footer .file-input.control {
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    z-index: 2;
+}
+.mod .mod_dio .con_dio .mod_footer .file-input.content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.mod .mod_dio .con_dio .mod_footer .file-input.button {
+    border: none;
+    font-weight: bold;
+    margin-left: .25em;
+    padding: 0 .25em;
+    
+}
+.mod .mod_dio .con_dio .mod_footer .alert_images
+{
+	float: left;
+}
+.mod .mod_dio .con_dio .mod_footer .alert_images h6
+{
+	margin-left: 10px;
+	color:#3897f0;
+	font-weight: bolder;
+}
+.mod .mod_dio .con_dio .mod_footer .alert_images h6 span
+{
+	margin-right:5px; 
+}
+/*end styling the model*/

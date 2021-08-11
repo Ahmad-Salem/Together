@@ -1,0 +1,47 @@
+.option_suggest .list_liked_accounts
+{
+	overflow-y:scroll;
+}
+.option_suggest .list_liked_accounts li
+{
+	border-top: 1px solid #ccc;
+	padding: 10px; 
+}
+.option_suggest .list_liked_accounts li img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #3897f0;
+}
+.option_suggest .list_liked_accounts li a 
+{
+	text-decoration: none;
+}
+.option_suggest .list_liked_accounts li a span
+{
+	color: #3897f0;
+	font-weight:bolder;
+}
+/*comment styling pop up*/ 
+.option_suggest .list_comments_accounts
+{
+	overflow-y: scroll;
+	height:200px;
+}
+.option_suggest .list_comments_accounts li
+{
+	border-top: 1px solid #ccc;
+	padding: 10px; 
+}
+.option_suggest .list_comments_accounts li img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #3897f0;
+}
+.option_suggest .list_comments_accounts li p
+{
+	word-wrap:break-word;
+}

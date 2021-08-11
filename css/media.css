@@ -1,0 +1,27 @@
+/* smart phone and tablets */
+@media(max-width:767px)
+{
+    .card-main .Login-card .Login-Form .person-data{width: 100%}
+    .card-main .Login-card .Login-Form .Foundation-data{width: 100%}
+    .Main-Intro .Main-Intro-Content .Intro-TxT .login{margin-left: 0px;margin-right: 0px;}
+}
+/*small screen*/
+@media(min-width:768px)and@media(max-width:991px)
+{
+    .card-main .Login-card .Login-Form .Foundation-data .Description textarea
+    {
+        width: 200px;
+        height: 150px;
+    }
+}
+/* medium screen*/
+@media(min-width:992px)and@media(max-width:1199px)
+{
+    
+    
+}
+/* large screen*/
+@media(min-width:1200px)
+{
+    
+}

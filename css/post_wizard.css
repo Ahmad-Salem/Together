@@ -1,0 +1,521 @@
+.fading_opacityw
+{
+    height: 100%;
+}
+.fading_opacityw .mod_diow
+{
+    height: 100%;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post
+{
+    box-shadow: none;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    margin: 0px auto;
+    min-width: 750px;
+    width: 100%;
+    pointer-events:auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    height: 100%; 
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .mod_body_normal_post
+{
+    min-width: 750px;
+    height: 100%
+}
+
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    border:1px solid #ddd;
+    background-color: #fff;
+    border-radius:5px; 
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body h4
+{
+    color:#3897f0;
+    margin-top:20px;
+    font-weight: bolder; 
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .content
+{
+    width: 400px;
+    margin: 0 auto;
+    height: 100px;
+    z-index: -1;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar
+{
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .split
+{
+    margin-top:50px;
+    clear: both; 
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar li
+{
+    list-style-type: none;
+    float:left;
+    width:33.33%;
+    position: relative;
+    text-align: center;
+    margin-left: 26px;
+}
+/*progressbar content*/ 
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar li:before
+{
+    font-family: FontAwesome;
+    content: "\f03e";
+    width: 100px;
+    font-size: 30px;
+    height: 100px;
+    line-height: 100px;
+    border:2px solid #ddd;
+    display:block;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar .photo
+{
+    z-index: 3;
+    
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar .photo .photo_icon
+{
+   
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar .caption
+{
+    z-index: 2;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar .caption:before
+{
+    font-family: FontAwesome;
+    content: "\f044";
+    
+}
+/* progressbar connectors */
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar li:after
+{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background-color: #ddd;
+    top:50px;
+    left: -50%;
+    z-index: -1;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar li:first-child:after
+{
+    content: none;
+}
+
+/* active styling*/
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar li.active
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar li.active:before 
+{
+    border-color:#3897f0; 
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .progressbar li.active + li:after
+{
+    background-color:#3897f0; 
+}
+
+
+/*content styling*/
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content
+{
+    width: 100%;
+    height: 250px;
+    margin-top:30px; 
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .file-input
+{
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .file-input2
+{
+    width: 0px;
+    height: 100px;
+    margin:0px auto;
+    float: left;
+    
+}
+#Custom_post2{
+    width: 80px;
+}
+
+/*field set number 2 (post caption)*/
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .post_caption_text 
+{
+    width: 100%;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .post_caption_text .caption_textarea 
+{
+    width: 80%;
+    margin: 25px auto;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .post_caption_text .caption_textarea textarea
+{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .button_action2
+{
+    border-top:1px solid #ccc; 
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .button_action2 .post
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: right;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .button_action2 .post:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px;  
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .button_action2 .previous
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: left;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .button_action2 .previous:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px;
+}
+
+
+/***********************************/
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .file-input .upload_image_style
+{
+
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .file-input .upload_image_style .photo_box
+{
+    margin-left: 30%;
+    width: 100%;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .file-input .error_testing .error
+{
+    color:#ff0000;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .file-input .warning_testing .warning
+{
+    color:#ff0000;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .choose_photo
+{
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .choose_photo h6
+{
+    color:#3897f0;
+    font-weight: bolder
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .upload_image_style img 
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3897f0;
+    border-radius:50%;     
+    margin: 0px auto;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content  h6
+{
+    color: #3897f0;
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-top: 20px;
+   
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .upload_image_style .error_testing
+{
+    width: 100%;
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post.wizard_body .form_content .upload_image_style .error
+{
+    color:#ff0000;
+    margin-left: 10px;
+    display: block;
+    border: 1px solid #ff0000;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .error_testing 
+{
+    margin: 10px;
+    padding: 5px;
+    border: 1px dashed #ff0000;
+    border-radius: 5px;
+    background-color:#fbbdbd;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .error_testing .error
+{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body  .error_testing 
+{
+    margin: 10px;
+    padding: 5px;
+    border: 1px dashed #ff0000;
+    border-radius: 5px;
+    background-color:#fbbdbd;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .error_testing .error
+{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center
+}
+/*warning*/
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .upload_image_style .warning_testing
+{
+    width: 100%;
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post.wizard_body .form_content .upload_image_style .warning
+{
+    color:#ecb201;
+    margin-left: 10px;
+    display: block;
+    border: 1px solid #ff0000;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .warning_testing 
+{
+    margin: 10px;
+    padding: 5px;
+    border: 1px dashed #ecb201;
+    border-radius: 5px;
+    background-color:#f9db7f;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .warning_testing .warning
+{
+    color: #fd8a02;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox
+{
+    height: 100px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow-y:scroll;  
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value
+{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close
+{
+    width:20px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+    right: 0px;
+    top:-85px;
+    background-color: #fafafa;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close:hover
+{
+    border: 1px solid #333 ;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close > div
+{
+    width: 12px;
+    height: 2px;
+    background-color: #444;
+    position: absolute;
+    left: 3px;
+    top: 10px;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close > div:first-child
+{
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close > div:last-child
+{
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value:hover
+{
+
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value img
+{
+    width: 100%;
+    height: 100%;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_action
+{
+    border: 2px dashed #3897f0;
+    height: 80px;
+    width: 80px;
+    float: left;
+    overflow: hidden;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_action h6
+{
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    color:#3897f0;
+    margin-left: -3px;    
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .button_action
+{ 
+    border-top:1px solid #ddd;
+    margin-top:20px; 
+    
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .button_action .next1
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: right;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .button_action .next1:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px; 
+}
+/* for hidden input to get the photo*/
+.fading_opacityw .mod_diow .mod_con_normal_post .file-test-area {
+    border: 1px solid;
+    margin: .5em;
+    padding: 1em;
+}
+#center_action_photo
+{
+    margin-left: 25%;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .file-input {
+    cursor: pointer !important;
+    margin-left: 25%;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .file-input * {
+    cursor: pointer !important;
+
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .file-input.wrapper {
+    font-size: 14px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .file-input.control {
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    z-index: 2;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .wizard_body .form_content .photobox .photo_value 
+{
+    z-index: 3;
+}
+.fading_opacityw .mod_diow .mod_con_normal_post .file-input.content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.fading_opacityw .mod_diow .mod_con_normal_post .file-input.button {
+    border: none;
+    font-weight: bold;
+    margin-left: .25em;
+    padding: 0 .25em;
+    background-color:#fff 
+}

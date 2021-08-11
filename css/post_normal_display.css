@@ -1,0 +1,11 @@
+.post_area .post .related_contents
+{
+	background-color: #fff;
+	border: 1px solid #efefef;
+	margin-top: 0px;
+}
+.post_area .post .related_contents .comments p img
+{
+	width: 80px;
+	height: 80px;
+}

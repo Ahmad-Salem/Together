@@ -1,0 +1,2068 @@
+/*profile design*/
+/* fonface*/
+@font-face
+{
+    font-family:Bold-smooth;
+    /*src:url("../fonts/DroidSans-Bold.ttf");*/
+    src:url("../fonts/Kurale-Regular.ttf");
+}
+html
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color:#fafafa; 
+    font-family: 'Bold-smooth', serif;
+}
+/* profile*/
+.profile_header
+{
+    height: 100px;
+    border-top:1px solid #999999;
+    border-bottom:1px solid #999999; 
+    font-family: 'Bold-smooth', serif;
+    z-index: 99;
+}
+.profile_header .logo 
+{
+    padding:4px;
+}
+.profile_header .logo img
+{
+    border-radius:50px;
+    width: 80px;
+    height: 80px;
+}
+/* search box */
+.profile_header .search
+{
+    margin-top:25px; 
+}
+.profile_header .search input[type=text] 
+{
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search/search.png');
+   /*prefixes*/
+    background-size: 20px 20px;
+   /*prefixes*/
+    background-position: 10px 10px;
+   
+    background-repeat: no-repeat;
+    padding: 5px 10px 8px 40px;
+   
+    /*prefixes*/
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+/* When the input field gets focus, change its width to 100% */
+.profile_header .search input[type=text]:focus {
+    width: 100%;
+}
+
+/* search result */
+.profile_header .search .search_result
+{
+    z-index: 99;
+    border:2px solid #ccc;
+    border-top: 1px solid #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+.profile_header .search .search_option
+{
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+.profile_header .search .search_option label
+{
+    font-weight: bolder;
+    color:#999;
+    font-size: 14px;
+}
+.profile_header .search .search_result
+{
+    overflow-y:scroll;
+    max-height: 122px;
+     
+}
+.profile_header .search .search_result .element
+{
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    margin-top:2px;
+    margin-bottom:2px; 
+}
+.profile_header .search .search_result .element img 
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:1px solid #3897f0;
+}
+.profile_header .search .search_result .element h6
+{
+    display: inline;
+    margin-left:10px; 
+}
+
+/* header option */
+.profile_header .options
+{
+    margin: 30px auto;
+}
+.profile_header .options .option
+{
+    margin-left: 5px;
+}
+.profile_header .options .option li
+{
+    display: inline;
+    margin-left: 8px;
+}
+.profile_header .options .option li a
+{
+    text-decoration: none;
+    color:#333;
+}
+.profile_header .options .option li .active
+{
+    border:1px solid #3897f0;
+    border-radius: 50%;
+    padding: 11px 7px 3px 7px;
+    color: #3897f0;
+}
+.profile_header .options .option .notification .num_notification
+{
+    background-color: #605555;
+    border-radius: 50%;
+    color: #fff;
+    padding: 3px;
+    position: relative;
+    left: -10px;
+    top: 5px;
+}
+
+/* start styling profile notificaction*/
+.profile_header .options .option .profile1
+{
+    vertical-align: initial;
+}
+.profile_header .options .option .profile1 .dropdown-menu
+{
+   height: 250px;
+   overflow-y:scroll;      
+}
+.profile_header .options .option .profile1 .dropdown-menu li
+{
+    width: 200px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .profile1 .dropdown-menu li a
+{
+    width: 200px;
+    padding-left:3px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .profile1 .dropdown-menu li img
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3897f0;
+    border-radius:50%;  
+    margin-left: 70px;      
+}
+.profile_header .options .option .profile1 .dropdown-menu li .p1
+{
+    word-wrap:break-word;
+    font-size: 10px;
+    margin-top: 5px;
+    white-space: normal;
+}
+.profile_header .options .option .profile1 .dropdown-menu li .p1 .account_name
+{
+    font-weight:bolder; 
+    margin-left: 10px;
+}
+.profile_header .options .option .profile1 .dropdown-menu li  .time_normal
+{
+    font-weight:bolder; 
+    color:#3897f0;
+    text-align: center;
+    font-size: 10px;
+}
+.profile_header .options .option .profile1 .dropdown-menu li  .time_normal_profile1
+{
+    font-weight:bolder; 
+    color:#333;
+    text-align: center;
+    font-size: 12px;;
+}
+.profile_header .options .option .profile1 .dropdown-menu li .img_profile1
+{
+    margin-left: 10px;
+}
+.profile_header .options .option .profile1 .dropdown-menu li .p2
+{
+    text-align: center;
+    font-size: 10px;
+}
+
+/* end styling profile notification*/ 
+
+/* start styling normal post notification*/
+.profile_header .options .option .normal
+{
+    vertical-align: initial;
+}
+.profile_header .options .option .normal .dropdown-menu
+{
+   height: 250px;
+   overflow-y:scroll;      
+}
+.profile_header .options .option .normal .dropdown-menu li
+{
+    width: 200px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .normal .dropdown-menu li a
+{
+    width: 200px;
+    padding-left:3px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .normal .dropdown-menu li img
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3897f0;
+    border-radius:50%;  
+    margin-left: 70px;      
+}
+.profile_header .options .option .normal .dropdown-menu li .p1
+{
+    word-wrap:break-word;
+    font-size: 10px;
+    margin-top: 5px;
+    white-space: normal;
+}
+.profile_header .options .option .normal .dropdown-menu li .p1 .account_name
+{
+    font-weight:bolder; 
+    margin-left: 10px;
+}
+.profile_header .options .option .normal .dropdown-menu li  .time_normal
+{
+    font-weight:bolder; 
+    color:#3897f0;
+    text-align: center;
+    font-size: 10px;
+}
+.profile_header .options .option .normal .dropdown-menu li .p2
+{
+    text-align: center;
+    font-size: 10px;
+}
+.profile_header .options .option .normal .dropdown-menu li .p2 .statis1
+{
+    font-weight: bolder;
+}
+.profile_header .options .option .normal .dropdown-menu li .p2 .statis2
+{
+    font-weight: bolder;
+    margin-left: 5px;
+}
+/* end styling normal post notification*/
+/* start styling request post notification*/
+.profile_header .options .option .request
+{
+    vertical-align: initial;
+}
+.profile_header .options .option .request .dropdown-menu
+{
+   height: 250px;
+   overflow-y:scroll;      
+}
+.profile_header .options .option .request .dropdown-menu li
+{
+    width: 200px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .request .dropdown-menu li h6
+{
+    font-weight: bolder;
+    font-size: 12px;
+}
+.profile_header .options .option .request .dropdown-menu li a
+{
+    width: 200px;
+    padding-left:3px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .request .dropdown-menu li img
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3897f0;
+    border-radius:50%;  
+    margin-left: 70px;      
+}
+.profile_header .options .option .request .dropdown-menu li .p1
+{
+    word-wrap:break-word;
+    font-size: 10px;
+    margin-top: 5px;
+    white-space: normal;
+}
+.profile_header .options .option .request .dropdown-menu li .p1 .account_name
+{
+    font-weight:bolder; 
+    margin-left: 10px;
+}
+.profile_header .options .option .request .dropdown-menu li  .time_normal
+{
+    font-weight:bolder; 
+    color:#3897f0;
+    text-align: center;
+    font-size: 10px;
+}
+.profile_header .options .option .request .dropdown-menu li .p2
+{
+    text-align: center;
+    font-size: 10px;
+}
+.profile_header .options .option .request .dropdown-menu li .p2 .statis1
+{
+    font-weight: bolder;
+}
+/* end styling request post notification*/
+/* start styling messages notification*/
+.profile_header .options .option .message
+{
+    vertical-align: initial;
+}
+.profile_header .options .option .message .dropdown-menu
+{
+   height: 250px;
+   overflow-y:scroll;      
+}
+.profile_header .options .option .message .dropdown-menu li
+{
+    width: 200px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .message .dropdown-menu li a
+{
+    width: 200px;
+    padding-left:3px;
+    overflow-x:hidden;  
+}
+.profile_header .options .option .message .dropdown-menu li h6
+{
+    font-weight: bolder;
+    font-size: 12px;
+}
+.profile_header .options .option .message .dropdown-menu li img
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3897f0;
+    border-radius:50%;  
+    margin-left: 70px;      
+}
+.profile_header .options .option .message .dropdown-menu li .p1
+{
+    word-wrap:break-word;
+    font-size: 10px;
+    margin-top: 5px;
+    white-space: normal;
+}
+.profile_header .options .option .message .dropdown-menu li .p1 .account_name
+{
+    font-weight:bolder;
+    margin-left: 10px; 
+}
+.profile_header .options .option .message .dropdown-menu li  .time_normal
+{
+    font-weight:bolder; 
+    color:#3897f0;
+    text-align: center;
+    font-size: 10px;
+}
+.profile_header .options .option .message .dropdown-menu li .message_body
+{
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+.profile_header .options .option .message .dropdown-menu li .p2
+{
+    text-align: center;
+    font-size: 10px;
+}
+.profile_header .options .option .message .dropdown-menu li .p2 .statis1
+{
+    font-weight: bolder;
+}
+
+
+/* end styling messages notification*/
+/*profile*/
+.profile
+{
+    margin-top:25px;
+    padding:40px 20px 0;
+ }
+/* profile photo*/
+.profile .profile_photo
+{
+    margin: 0 auto;
+    width: 50%;      
+}
+.profile .profile_photo img
+{
+    border-radius: 50%;
+    border: 2px solid #999999; 
+    width:180px;
+    height:180px;
+}
+.profile .Together_msg 
+{
+    width: 50%;
+    margin: 10px auto;
+
+}
+.profile .Together_msg span
+{
+    background-color: #fff; 
+    color:#ff0000;
+    border-radius:50%;
+}
+/* profile text*/
+.profile .profile_text
+{
+    color:#333;
+}
+.profile .profile_text h4
+{
+    display: inline;
+}
+.profile .profile_text .setting_btn
+{ 
+    border: 1px solid #999999;
+    text-decoration: none;
+    padding:5px;
+    color:#333;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    margin: 5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.profile .profile_text .trust_btn{
+    margin-right: 16px;
+    color:#3897f0;
+    background-color: #fff;
+    border: 2px solid #3897f0;
+    border-radius:5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    }
+.profile .profile_text .extra_setting
+{
+    text-decoration: none;
+    padding:5px;
+    color:#333;
+    font-weight: bolder;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color:#FAFAFA;
+    border: none; 
+}
+.profile .profile_text .extra_settings_trust
+{
+    text-decoration: none;
+    padding:5px;
+    color:#333;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color:#FAFAFA;
+    border: none; 
+}
+.profile .profile_text .extra_setting span
+{
+        padding: 1px 0px;
+        margin: 1px;
+        font-size: 18px;
+        color:#999;
+}
+
+.profile .profile_text p
+{
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: left;
+}
+.profile .profile_text .counters
+{
+    text-align: left;
+    font-size: 16px;
+}
+.profile .profile_text .progress
+{
+    width: 80%;
+    margin-top: 25px;
+}
+.profile .profile_text .progress{height: 36px;border:1px solid #DDD;}
+.profile .profile_text.progress-bar
+{
+    line-height:36px;
+    font-size:15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px; 
+    padding-top: 10px; 
+}
+.profile .profile_text .progress .info{
+    position: relative;
+    top: 5px;    
+}
+.profile .profile_text .counters .bold
+{
+    font-weight: bolder;
+}
+
+.posts_setion
+{
+    height: 190px;
+}
+
+
+/*footer style*/
+.footer_inc
+{
+    background-color: #fafafa;
+    color:#333;
+    padding:15px 0;
+    margin-top: 40px;
+    font-size: 18px;
+    border-top:1px solid #999;
+    border-bottom:1px solid #999; 
+
+}
+
+
+
+
+
+/*styling pop up of logout */
+/* styling close button*/
+.fading_opacity .close
+{
+    margin-right: 20px;
+    opacity: .8;
+}
+.fading_opacity .close span 
+{
+    color:#fff;
+    font-size: 30px;
+}
+
+.fading_opacity .close:hover
+{
+    opacity: 1; 
+}
+/* styling content-model */
+.fading_opacity .mod_dio .mod_con
+{
+    box-shadow: none;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    margin: 150px auto;
+    max-width: 935px;
+    width: 100%;
+    pointer-events:auto;
+}
+
+.fading_opacity .mod_dio .mod_con .modal-body .mod_body
+{
+    margin-bottom:10px;
+}
+
+.fading_opacity .mod_dio .mod_con .modal-body:hover
+{
+    background-color: #f0f0f0;
+    cursor: pointer;        
+}
+.fading_opacity .mod_dio .mod_con .modal-body h4 a
+{
+    text-decoration: none;
+    color:#333;
+}
+.fading_opacity .mod_dio .mod_con .modal-body h4:hover
+{font-weight: bolder;}
+.fading_opacity .mod_dio .mod_con  .cansel
+{
+    border-top:1px solid #999999;
+}
+
+/*request post styling*/
+.fading_opacity .mod_dioreq
+{
+    width: 80%;
+}
+.fading_opacity .mod_dioreq .mod_conreq
+{
+    margin-top: 0px;
+    width: 100%;
+}
+
+
+
+.fading_opacity .mod_dioreq .mod_conreq .content
+{
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    z-index: -1;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar
+{
+}
+.fading_opacity .mod_dioreq .mod_conreq  .split
+{
+    margin-top:50px;
+    clear: both; 
+}
+
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar li
+{
+    list-style-type: none;
+    float:left;
+    width:28.33%;
+    position: relative;
+    text-align: center;
+    margin-left: 26px;
+}
+/*progressbar content*/ 
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar li:before
+{
+    font-family: FontAwesome;
+    content: "\f03e";
+    width: 100px;
+    font-size: 30px;
+    height: 100px;
+    line-height: 100px;
+    border:2px solid #ddd;
+    display:block;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar .photo
+{
+    z-index: 3;
+    
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar .op
+{
+    z-index: 4;
+    
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar .op:before
+{
+    content: "\f128";
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar .photo .photo_icon
+{
+   
+}
+.fading_opacity .mod_dioreq .mod_conreq .progressbar .caption
+{
+    z-index: 2;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar .caption:before
+{
+    font-family: FontAwesome;
+    content: "\f044";
+    
+}
+/* progressbar connectors */
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar li:after
+{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background-color: #ddd;
+    top:50px;
+    left: -50%;
+    z-index: -1;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar li:first-child:after
+{
+    content: none;
+}
+
+/* active styling*/
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar li.active
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar li.active:before 
+{
+    border-color:#3897f0; 
+}
+.fading_opacity .mod_dioreq .mod_conreq  .progressbar li.active + li:after
+{
+    background-color:#3897f0; 
+}
+
+
+/*content styling*/
+.fading_opacity .mod_dioreq .mod_conreq  .form_content
+{
+    width: 100%;
+    height: 250px;
+    margin-top:30px; 
+}
+
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest
+{
+    height: 250px;
+   
+   
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest .upload_photos h6
+{
+    color:#3897f0;
+    font-weight:bolder;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest  .warning_testing
+{
+    margin: 10px;
+    padding: 5px;
+    border: 1px dashed #ecb201;
+    border-radius: 5px;
+    background-color: #f9db7f;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest  .warning_testing .warning
+{
+    color: #fd8a02;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest .upload_photos .form-group
+{
+    margin-left:20px;
+    margin-right:20px;  
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest .file_drag_area  
+{  
+    width:80%;  
+    height:200px;
+    margin: 10px auto;  
+    border:2px dashed #ccc;  
+     
+    text-align:center;  
+    font-size:24px;  
+} 
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest .file_drag_area  h4
+{
+    color:#333;
+    line-height:200px; 
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest .drag_error
+{
+    border: 2px dashed #ff0000;
+}
+.fading_opacity .mod_dioreq .mod_conreq .request_error
+{
+    color:#ff0000;
+    font-weight: bolder;
+    margin-bottom: 20px;
+} 
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest .file_drag_over
+{  
+    color:#000;  
+    border-color:#000;  
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .content_reuest .header4
+{
+    margin-left: 30px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .content_reuest input
+{
+    margin-left: 30px;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .content_reuest label h4
+{
+    font-size: 16px;
+    color:#333;  
+}
+/*field set number 2 (post caption)*/
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text 
+{
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest
+{
+    padding: 10px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .header4r
+{
+    margin-bottom: 30px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .input-group
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .input-group-addon i
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .post_caption_text .content_reuest .option_age
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_age label 
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_age select
+{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .post_caption_text .content_reuest .oprtion_tall
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .oprtion_tall label
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .oprtion_tall input
+{
+    margin-bottom: 20px;
+    width: 150px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_skin
+{
+    width: 80%;
+    margin: 0 auto; 
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_skin label
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_skin select
+{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_eye
+{
+    width: 80%;
+    margin: 0 auto; 
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_eye label
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_eye select
+{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_hair
+{
+    width: 80%;
+    margin: 0 auto; 
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_hair label
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_hair select
+{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_country
+{
+    width: 80%;
+    margin: 0 auto; 
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_country label
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_country select
+{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_loosing_story
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_loosing_story h5
+{
+    color: #3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_loosing_story textarea
+{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_status
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_status h5
+{
+    color: #3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_status textarea
+{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_contact
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_contact h5
+{
+    color: #3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_contact textarea
+{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_relation
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_relation h5
+{
+    color: #3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .post_caption_text .content_reuest .option_descrip_relation textarea
+{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+
+
+.fading_opacity .mod_dioreq .mod_conreq   .button_action2
+{
+    border-top:1px solid #ccc; 
+}
+.fading_opacity .mod_dioreq .mod_conreq   .button_action2 .post
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: right;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+.fading_opacity .mod_dioreq .mod_conreq   .button_action2 .post:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px;  
+}
+.fading_opacity .mod_dioreq .mod_conreq   .button_action2 .previous
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: left;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+.fading_opacity .mod_dioreq .mod_conreq   .button_action2 .previous:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px;
+}
+
+
+/***********************************/
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .file-input .upload_image_style
+{
+
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .file-input .upload_image_style .photo_box
+{
+    
+    margin-left: 30%;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .file-input .error_testing .error
+{
+    color:#ff0000;
+}
+
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .upload_image_style img 
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3897f0;
+    border-radius:50%;     
+    margin-left:50px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .upload_image_style h6
+{
+    color: #3897f0;
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-top: 20px;
+   
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .upload_image_style .error_testing
+{
+    width: 100%;
+}
+
+.fading_opacity .mod_dioreq .mod_conreq  .form_content .upload_image_style .error
+{
+    color:#ff0000;
+    margin-left: 10px;
+    display: block;
+    border: 1px solid #ff0000;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .error_testing 
+{
+    margin: 10px;
+    padding: 5px;
+    border: 1px dashed #ff0000;
+    border-radius: 5px;
+    background-color:#fbbdbd;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .error_testing .error
+{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox
+{
+    height: 100px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value
+{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value .button_close
+{
+    width:20px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+    right: 0px;
+    top:-85px;
+    background-color: #fafafa;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value .button_close:hover
+{
+    border: 1px solid #333 ;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value .button_close > div
+{
+    width: 12px;
+    height: 2px;
+    background-color: #444;
+    position: absolute;
+    left: 3px;
+    top: 10px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value .button_close > div:first-child
+{
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value .button_close > div:last-child
+{
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value:hover
+{
+
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_value img
+{
+    width: 100%;
+    height: 100%;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_action
+{
+    border: 2px dashed #3897f0;
+    height: 80px;
+    width: 80px;
+    float: left;
+    overflow: hidden;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .photobox .photo_action h6
+{
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    color:#3897f0;    
+}
+
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .button_action
+{ 
+    border-top:1px solid #ddd;
+    
+    height: 80px;
+}
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .button_action .next1
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: right;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.fading_opacity .mod_dioreq .mod_conreq   .form_content .button_action .next1:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px; 
+}
+
+
+
+
+/* end styling request post */
+.fading_opacity .mod_dioreq .mod_conreq  .mod_body_request_post
+{
+    margin-bottom:10px;
+}
+.fading_opacity .mod_dioreq .mod_conreq  .mod_body_request_post h4
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+/* styling for suggested people Main.php*/
+
+
+.fading_opacity .mod_dio .mod_con .modal-body .mod_body_setting_suggested
+{
+    margin-bottom:10px;
+}
+
+.fading_opacity .mod_dio .mod_con .modal-body:hover
+{
+    background-color: #f0f0f0;
+    cursor: pointer;        
+}
+.fading_opacity .mod_dio .mod_con .modal-body_setting
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+} 
+.fading_opacity .mod_dio .mod_con .modal-body_setting h4
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dio .mod_con .modal-body_setting .option_suggest
+{
+    width: 50%;
+    margin: 25px auto;
+    background-color: #fafafa;
+    padding: 20px;
+}
+.fading_opacity .mod_dio .mod_con .modal-body_setting .option_suggest label
+{
+    color:#333;
+}
+.fading_opacity .mod_dio .mod_con .modal-body_setting .option_suggest input
+{
+    float: right;
+}
+
+
+.fading_opacity .mod_dio .mod_con .modal-body h4 a
+{
+    text-decoration: none;
+    color:#333;
+}
+.fading_opacity .mod_dio .mod_con .modal-body h4:hover
+{font-weight: bolder;}
+.fading_opacity .mod_dio .mod_con  .cansel
+{
+    border-top:1px solid #999999;
+}
+
+
+
+.fading_opacity .mod_dio .mod_con 
+{
+    margin-bottom:10px;
+}
+
+
+/* trusted Accounts */
+
+.fading_opacity .mod_dio .mod_con .trusting_body
+{
+
+}
+.fading_opacity .mod_dio .mod_con .trusting_body h4
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body
+{
+    height: 200px;
+    overflow-y:scroll;
+    overflow-x:hidden;  
+}
+/* scroll bar prefixes */
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body::-webkit-scrollbar
+{
+    width: 10px;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.1);
+}
+
+
+/*scroll bar prefixes*/
+
+
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_header
+{
+    padding-left: 16px;
+    padding-top:  10px;
+    color: #999;
+    padding-bottom: 10px;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_header h5
+{
+    float: left;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_header span
+{
+    float: right;
+    padding-right: 10px;
+    color:#3897f0;
+    cursor: pointer;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_header span a
+{
+    text-decoration: none;
+    color:#3897f0;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_element
+{
+    border-top:1px solid #efefef;
+    padding: 16px;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_element img 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline;
+    margin-left: 16px;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_element h5
+{
+    display: inline;
+    margin-left: 16px;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_element h5 a
+{
+    text-decoration: none;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusting_account_body .trusting_account_element button
+{
+    float: right;
+    margin-right: 16px;
+    color:#3897f0;
+    background-color: #fff;
+    border: 1px solid #3897f0;
+    border-radius:5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+
+} 
+/* trusted Accounts */
+.fading_opacity .mod_dio .mod_con .trusted_body
+{
+
+}
+.fading_opacity .mod_dio .mod_con .trusted_body h4
+{
+    color:#3897f0;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body
+{
+    height: 200px;
+    overflow-y:scroll;
+    overflow-x:hidden;  
+}
+/* scroll bar prefixes */
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body::-webkit-scrollbar
+{
+    width: 10px;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.1);
+}
+
+
+/*scroll bar prefixes*/
+
+
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_header
+{
+    padding-left: 16px;
+    padding-top:  10px;
+    color: #999;
+    padding-bottom: 10px;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_header h5
+{
+    float: left;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_header span
+{
+    float: right;
+    padding-right: 10px;
+    color:#3897f0;
+    cursor: pointer;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_header span a
+{
+    text-decoration: none;
+    color:#3897f0;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusted_account_body .trusted_account_element
+{
+    border-top:1px solid #efefef;
+    padding: 16px;
+}
+.fading_opacity .mod_dio .mod_con .trusting_body .trusted_account_body .trusted_account_php
+{
+    border-top:1px solid #efefef;
+    padding: 16px;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_element img 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline;
+    margin-left: 16px;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_element h5
+{
+    display: inline;
+    margin-left: 16px;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_element h5 a
+{
+    text-decoration: none;
+}
+.fading_opacity .mod_dio .mod_con .trusted_body .trusted_account_body .trusted_account_element button
+{
+    float: right;
+    margin-right: 16px;
+    color:#3897f0;
+    background-color: #fff;
+    border: 1px solid #3897f0;
+    border-radius:5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+
+} 
+
+
+/* posting section */
+
+.post .request_post_body
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-top:10px;
+    padding-bottom: 10px;
+    max-width: 588px;
+    margin:0px auto;
+}
+
+.post .request_post_body .list_request .request_header h4
+{
+    color:#3897f0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.post .request_post_body .list_request .request_body
+{
+    border-top:1px solid #ddd;
+    padding-top:5px;
+    padding-bottom:5px; 
+
+}
+.post .request_post_body .list_request .request_body .request_buttons
+{
+    width: 80%;
+    margin: 5px auto;
+
+}
+.post .request_post_body .list_request .request_body .request_buttons .first_btn button
+{
+    margin-left: 10%;
+    border:1px solid #ddd;
+    padding :10px;
+    border-radius:10px;
+    background-color: #fff;
+    color:#3897f0;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.post .request_post_body .list_request .request_body .request_buttons .second_btn button
+{
+    margin-left: 10%;
+    border:1px solid #ddd;
+    padding :10px;
+    border-radius:10px;
+    background-color: #fff;
+    color:#3897f0;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+
+
+
+
+.fading_opacity .mod_dio .mod_con_normal_post
+{
+    box-shadow: none;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    margin: 0px auto;
+    min-width: 750px;
+    width: 100%;
+    pointer-events:auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    height: 100%; 
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .mod_body_normal_post
+{
+    min-width: 750px;
+    height: 100%
+}
+
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    border:1px solid #ddd;
+    background-color: #fff;
+    border-radius:5px; 
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body h4
+{
+    color:#3897f0;
+    margin-top:20px;
+    font-weight: bolder; 
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .content
+{
+    width: 400px;
+    margin: 0 auto;
+    height: 100px;
+    z-index: -1;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar
+{
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .split
+{
+    margin-top:50px;
+    clear: both; 
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar li
+{
+    list-style-type: none;
+    float:left;
+    width:33.33%;
+    position: relative;
+    text-align: center;
+    margin-left: 26px;
+}
+/*progressbar content*/ 
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar li:before
+{
+    font-family: FontAwesome;
+    content: "\f03e";
+    width: 100px;
+    font-size: 30px;
+    height: 100px;
+    line-height: 100px;
+    border:2px solid #ddd;
+    display:block;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar .photo
+{
+    z-index: 3;
+    
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar .photo .photo_icon
+{
+   
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar .caption
+{
+    z-index: 2;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar .caption:before
+{
+    font-family: FontAwesome;
+    content: "\f044";
+    
+}
+/* progressbar connectors */
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar li:after
+{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background-color: #ddd;
+    top:50px;
+    left: -50%;
+    z-index: -1;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar li:first-child:after
+{
+    content: none;
+}
+
+/* active styling*/
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar li.active
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar li.active:before 
+{
+    border-color:#3897f0; 
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .progressbar li.active + li:after
+{
+    background-color:#3897f0; 
+}
+
+
+/*content styling*/
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content
+{
+    width: 100%;
+    height: 250px;
+    margin-top:30px; 
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .file-input
+{
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+}
+
+/*field set number 2 (post caption)*/
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .post_caption_text 
+{
+    width: 100%;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .post_caption_text .caption_textarea 
+{
+    width: 80%;
+    margin: 25px auto;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .post_caption_text .caption_textarea textarea
+{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .button_action2
+{
+    border-top:1px solid #ccc; 
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .button_action2 .post
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: right;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .button_action2 .post:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px;  
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .button_action2 .previous
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: left;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .button_action2 .previous:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px;
+}
+
+
+/***********************************/
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .file-input .upload_image_style
+{
+
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .file-input .upload_image_style .photo_box
+{
+    
+    margin-left: 30%;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .file-input .error_testing .error
+{
+    color:#ff0000;
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .upload_image_style img 
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3897f0;
+    border-radius:50%;     
+    margin-left:50px;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .upload_image_style h6
+{
+    color: #3897f0;
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-top: 20px;
+   
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .upload_image_style .error_testing
+{
+    width: 100%;
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post.wizard_body .form_content .upload_image_style .error
+{
+    color:#ff0000;
+    margin-left: 10px;
+    display: block;
+    border: 1px solid #ff0000;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .error_testing 
+{
+    margin: 10px;
+    padding: 5px;
+    border: 1px dashed #ff0000;
+    border-radius: 5px;
+    background-color:#fbbdbd;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .error_testing .error
+{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox
+{
+    height: 100px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value
+{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close
+{
+    width:20px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+    right: 0px;
+    top:-85px;
+    background-color: #fafafa;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close:hover
+{
+    border: 1px solid #333 ;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close > div
+{
+    width: 12px;
+    height: 2px;
+    background-color: #444;
+    position: absolute;
+    left: 3px;
+    top: 10px;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close > div:first-child
+{
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value .button_close > div:last-child
+{
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value:hover
+{
+
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_value img
+{
+    width: 100%;
+    height: 100%;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_action
+{
+    border: 2px dashed #3897f0;
+    height: 80px;
+    width: 80px;
+    float: left;
+    overflow: hidden;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .photobox .photo_action h6
+{
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    color:#3897f0;    
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .button_action
+{ 
+    border-top:1px solid #ddd;
+    
+}
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .button_action .next1
+{
+    border:1px solid #3897f0;
+    width: 100px;
+    float: right;
+    padding: 2px;
+    background-color: #fff;
+    color: #3897f0;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius:5px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .wizard_body .form_content .button_action .next1:hover
+{
+    border:1px solid #ddd;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius:5px; 
+}
+/* for hidden input to get the photo*/
+.fading_opacity .mod_dio .mod_con_normal_post .file-test-area {
+    border: 1px solid;
+    margin: .5em;
+    padding: 1em;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .file-input {
+    cursor: pointer !important;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .file-input * {
+    cursor: pointer !important;
+    display: inline-block;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .file-input.wrapper {
+    font-size: 14px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .file-input.control {
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    z-index: 2;
+}
+.fading_opacity .mod_dio .mod_con_normal_post .file-input.content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.fading_opacity .mod_dio .mod_con_normal_post .file-input.button {
+    border: none;
+    font-weight: bold;
+    margin-left: .25em;
+    padding: 0 .25em;
+    background-color:#fff 
+}
+
+
+
+/* styling for suggested people Main.php*/
+
+.tab-content .photobox
+{
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+.tab-content .photobox .photo_addtion
+{
+    height: 100px;
+    width: 100px;
+    border: 2px dashed #3897f0;
+    font-weight: bolder;
+    float: left;
+     
+}
+.tab-content .photobox .photo_addtion .h2
+{
+    margin-top: 25px;
+    color:#3897f0;
+}
+.tab-content .photobox .photo_content
+{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 20px;
+}
+.tab-content .photobox .photo_content 
+{
+    overflow:hidden; 
+}
+.tab-content .photobox .photo_content img
+{
+    height: 100px;
+    width: 100px;
+}
+
+/*start styling together messaging */
+.fading_opacity_together_msg .mod_dio_together_msg .mod_con_together_msg .mod_body_together_msg ul
+{
+    max-height: 250px;
+    overflow-y:scroll; 
+}
+.fading_opacity_together_msg .mod_dio_together_msg .mod_con_together_msg .mod_body_together_msg li 
+{
+    border-bottom:1px solid #ccc;
+    padding: 10px; 
+    width: 90%;
+    margin:0 auto;
+}
+.fading_opacity_together_msg .mod_dio_together_msg .mod_con_together_msg .mod_body_together_msg li span
+{
+    color:#3897f0;
+    font-weight: bolder;
+}
+.fading_opacity_together_msg .mod_dio_together_msg .mod_con_together_msg .mod_body_together_msg li  img
+{
+    border: 1px solid #3897f0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.fading_opacity_together_msg .mod_dio_together_msg .mod_con_together_msg .mod_body_together_msg li p 
+{
+    text-indent:10px;
+    text-align: center;
+    word-break: break-all;
+    word-spacing: break-word;
+    margin-top: 10px;
+}
+.fading_opacity_together_msg .mod_dio_together_msg .mod_con_together_msg .mod_body_together_msg li .delete_link
+{
+    width: 50px;
+    margin: 2px auto;
+}
+/*end styling together messaging */

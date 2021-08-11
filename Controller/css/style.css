@@ -1,0 +1,347 @@
+@font-face
+{
+    font-family:Rasa-smooth;
+    /*src:url("../fonts/DroidSans-Bold.ttf");*/
+    src:url("../fonts/Rasa-Medium.ttf");
+}
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: Rasa-smooth;
+	box-sizing:boder-box;
+}
+/* start styling the header*/
+.header
+{
+	width: 100%;
+	height: 50px;
+	background-color: #2c3e50;
+	margin: 0 auto;
+}
+.header .logo
+{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.header .logo a
+{
+	text-decoration: none;
+	font-size: 1.6em;
+	color:#fff;
+}
+.header .options
+{
+	float: right;
+}
+.header .options ul
+{
+	margin-top: 15px;
+}
+.header .options ul li 
+{
+	float: left;
+	margin-right: 20px;
+}
+.header .options ul li a 
+{
+	text-decoration: none;
+	color:#fff;
+	font-size: 15px;
+}
+.header .options ul li a .logout
+{
+	font-size: 30px;
+	position: relative;
+	top:-15px;
+}
+/* end styling the header*/
+/* start styling the container*/
+.containers
+{
+	width: 100%;
+	margin: 0 auto;
+	height: 100%
+}
+
+.containers .sidebar
+{
+	width:250px;
+	height:100%;
+	background-color: #333;
+	float: left;
+}
+.containers .sidebar .admin_picture
+{
+	width: 50%;
+	margin: 25px auto;
+}
+.containers .sidebar .admin_picture img
+{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.containers .sidebar .admin_picture p
+{
+	color:#fff;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.containers .sidebar .admin_picture  i
+{
+	color:#3897f0;
+}
+.containers .sidebar .navbar
+{
+
+}
+.containers .sidebar .navbar li
+{
+	list-style:none;
+}
+.containers .sidebar .navbar li a
+{
+	text-decoration: none;
+	color:#ccc;
+	display: block;;
+	padding: 12px;
+	font-size: 1.0em;
+	border-bottom: 2px solid #2c3e50;
+	-webkit-transition:.2s;
+	-o-transition:.2s;
+	-moz-transition:.2s;
+	-ms-transition:.2s;
+	transition:.2s;
+}
+.containers .sidebar .navbar li .selected
+{
+	background-color: #2c3e50;
+	color:#fff;	
+}
+.containers .sidebar .navbar li a:hover
+{
+	background-color: #2c3e50;
+	color:#fff;
+	padding: 10px; 
+}
+.containers .content
+{
+	width: auto;
+	height:100%;
+	margin-left: 250px;
+	padding: 15px;
+	background-color: #fafafa;
+}
+.containers .content p
+{
+	color:#424242;
+	font-size: .8em;
+	font-weight: bolder;
+}
+
+.containers .content .box
+{
+	margin-top: 15px;
+}
+
+.containers .content .box .box-top
+{
+	color:#fff;
+	text-shadow:0px 0px 1px 0px #ddd;
+	padding: 5px;
+	font-size: 20px;
+	background-color: #2980b9;
+}
+.containers .content .box .box-panel
+{
+	padding: 15px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.containers .content .statistic_tbl tr td
+{
+	padding: 10px;
+}
+
+
+.fading_opacity_panel .mod_dio_panel .mod_con_panel
+{
+    box-shadow: none;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    margin: 150px auto;
+    max-width: 935px;
+    width: 100%;
+    pointer-events:auto;
+}
+
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_panel .mod_body_panel
+{
+    margin-bottom:10px;
+    border-top:1px solid #333; 
+}
+
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_panel:hover
+{
+    background-color: #f0f0f0;
+    cursor: pointer;        
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_panel h4 a
+{
+    text-decoration: none;
+    color:#333;
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_panel h4:hover
+{font-weight: bolder;}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel  .cansel_panel
+{
+    border-top:1px solid #999999;
+}
+
+/*manage person more detail styling */
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_persons_panel
+{
+    background-color: #fff; 
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_persons_panel .person_detials
+{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #ddd; 
+	padding: 10px;
+	border-radius:5px; 
+	height: 300px;
+	overflow-y:scroll; 
+}
+
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_persons_panel .person_detials img
+{
+	width: 80px;
+	height: 80px;
+	border:2px solid #3897f0;
+	border-radius: 50%; 
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_persons_panel .person_detials h4
+{
+	display: inline;
+	color:#3897f0;
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_persons_panel .person_detials .element
+{
+	margin-top: 15px;
+	color:#2c3e50;
+	border-bottom:1px solid #fff; 
+
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_persons_panel .person_detials .element .title
+{
+	font-size: 16px;
+	color:#3897f0;
+	margin-right:5px; 
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_persons_panel .person_detials .element p
+{
+	word-wrap:break-word;
+	text-indent: 15px;
+}
+
+
+/* start reply contact us */
+.fading_opacity_panel .mod_dio_panel .mod_con_panel 
+{
+
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_panel .reply_body
+{
+	width: 80%;
+	height: 111px;
+	padding: 10px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius:5px;
+	margin: 0px auto;
+}
+.fading_opacity_panel .mod_dio_panel .mod_con_panel .mod_body_panel .reply_btn
+{
+	width: 80%;
+	margin:12px auto; 
+}
+
+/* end reply contact us */
+/*mobile menu*/
+.mobile 
+{
+	display: block;
+	color:#fff;
+	background-color: #333;
+	text-align: center;
+	padding:7px;
+	border-bottom:1px solid #fff;
+	/*border-top: 1px solid #fff;*/
+}
+
+/*manage persons style*/
+.filter
+{
+	width: 50%;
+	margin: 0 auto;
+}
+.filter input[type=text] 
+{
+
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../../images/search/search.png');
+   /*prefixes*/
+    background-size: 20px 20px;
+   /*prefixes*/
+    background-position: 10px 10px;
+   
+    background-repeat: no-repeat;
+    padding: 5px 10px 8px 40px;
+   	margin:10px; 
+    /*prefixes*/
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.mobile:active
+{
+	background-color: #2c3e50;
+}
+
+@media only screen and (max-width: 400px)
+{
+	.containers .sidebar{
+		width: 100%;
+		display: none;
+	}
+	.containers .content
+	{
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (min-width: 400px)
+{
+	.containers .sidebar{
+		height: 100%;
+		display: block;
+	}
+	.mobile
+	{
+		display: none;
+	}	
+}
+/* end styling the container*/
